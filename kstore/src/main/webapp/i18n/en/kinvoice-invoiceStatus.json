@@ -1,0 +1,10 @@
+{
+  "kstoreApp": {
+    "InvoiceStatus": {
+      "null": "",
+      "PAID": "PAID",
+      "ISSUED": "ISSUED",
+      "CANCELLED": "CANCELLED"
+    }
+  }
+}

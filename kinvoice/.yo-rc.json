@@ -1,0 +1,48 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "serverPort": "8082",
+    "serviceDiscoveryType": false,
+    "skipUserManagement": true,
+    "baseName": "kinvoice",
+    "buildTool": "gradle",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "microservice",
+    "packageName": "com.sendilkumarn.sample.kinvoice",
+    "packageFolder": "com/sendilkumarn/sample/kinvoice",
+    "jhipsterVersion": "6.10.0",
+    "creationTimestamp": 1593472500344,
+    "clientPackageManager": "npm",
+    "jwtSecretKey": "NjViNjFkODE4MWU0NjQxN2Y4ZWQzZGViODRlMWYxNzdlNzE3MjkxNTQ2OTY5YzBhMTZkZDk4ODExNTg3ZDFlOTRkNDU2NjljOTFmMmIzNDMyYjc5OWNkOWQ0MDVlOTllNDRjNGJjMWVlNzY0MzUzMWY2N2RlN2ZhZmZmZWQ3Mjc=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.1"
+      }
+    ],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.1"
+      }
+    ]
+  },
+  "entities": ["Invoice", "Shipment"]
+}

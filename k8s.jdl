@@ -1,0 +1,9 @@
+deployment {
+	deploymentType kubernetes
+	appsFolders [kstore, kinvoice, kproduct, knotification]
+	dockerRepositoryName "sendilkumarn"
+	serviceDiscoveryType no
+	istio true
+	kubernetesNamespace khipster
+	ingressDomain "localhost.nip.io"
+}

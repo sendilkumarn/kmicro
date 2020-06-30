@@ -1,0 +1,62 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: kstore-gateway
+  namespace: khipster
+  labels:
+    gateway: kstore-gateway
+    istio: ingressgateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+    - port:
+        number: 80
+        name: http
+        protocol: HTTP
+      hosts:
+        - kstore.khipster.localhost.nip.io
+    - port:
+        number: 80
+        name: http2
+        protocol: HTTP2
+      hosts:
+        - kstore.khipster.localhost.nip.io
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: kstore-gw-virtualservice
+  namespace: khipster
+  labels:
+    service: kstore-gw-virtualservice
+spec:
+  hosts:
+    - kstore.khipster.localhost.nip.io
+  gateways:
+    - kstore-gateway
+  http:
+    - match:
+        - uri:
+            prefix: /services/kinvoice/
+      route:
+        - destination:
+            host: kinvoice
+    - match:
+        - uri:
+            prefix: /services/kproduct/
+      route:
+        - destination:
+            host: kproduct
+    - match:
+        - uri:
+            prefix: /services/knotification/
+      route:
+        - destination:
+            host: knotification
+    - match:
+        - uri:
+            prefix: /
+      route:
+        - destination:
+            host: kstore

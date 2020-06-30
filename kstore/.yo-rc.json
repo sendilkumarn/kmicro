@@ -1,0 +1,53 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "clientFramework": "react",
+    "serverPort": "8080",
+    "serviceDiscoveryType": false,
+    "skipUserManagement": false,
+    "baseName": "kstore",
+    "buildTool": "gradle",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "skipClient": false,
+    "testFrameworks": ["protractor"],
+    "websocket": false,
+    "applicationType": "gateway",
+    "packageName": "com.sendilkumarn.sample.kstore",
+    "packageFolder": "com/sendilkumarn/sample/kstore",
+    "useSass": true,
+    "jhipsterVersion": "6.10.0",
+    "creationTimestamp": 1593472500344,
+    "skipServer": false,
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "jwtSecretKey": "OGMyOGJiZGQ0ODc4N2I0Y2MzMGIwZTA3ZWUxYmIyN2Y4N2U5OTAxMDkxYTRiNTMwNTI4YjYwODEyYmEzZGFkZTVjOGIyYWMzYmFmMjMzODhiZjgwNDQ5NGIzOGQyMTUxMWJiOTIwOGM5ZjFkZjAyOTQ0NWM0YWU3MGI3ZWIzZDA=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.1"
+      }
+    ],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.1"
+      }
+    ]
+  },
+  "entities": ["Customer", "Product", "ProductCategory", "ProductOrder", "OrderItem", "Invoice", "Shipment", "Notification"]
+}

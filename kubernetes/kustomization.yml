@@ -1,0 +1,87 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+namespace: khipster
+
+resources:
+  - namespace.yml
+  # Individual apps
+  - kstore-k8s/kstore-deployment.yml
+  - kstore-k8s/kstore-service.yml
+  - kstore-k8s/kstore-mysql.yml
+  - kstore-k8s/kstore-gateway.yml
+  - kstore-k8s/jwt-secret.yml
+  - kstore-k8s/kstore-destination-rule.yml
+  - kstore-k8s/kstore-virtual-service.yml
+  - kinvoice-k8s/kinvoice-deployment.yml
+  - kinvoice-k8s/kinvoice-service.yml
+  - kinvoice-k8s/kinvoice-mysql.yml
+  - kinvoice-k8s/jwt-secret.yml
+  - kinvoice-k8s/kinvoice-destination-rule.yml
+  - kinvoice-k8s/kinvoice-virtual-service.yml
+  - kproduct-k8s/kproduct-deployment.yml
+  - kproduct-k8s/kproduct-service.yml
+  - kproduct-k8s/kproduct-mysql.yml
+  - kproduct-k8s/jwt-secret.yml
+  - kproduct-k8s/kproduct-destination-rule.yml
+  - kproduct-k8s/kproduct-virtual-service.yml
+  - knotification-k8s/knotification-deployment.yml
+  - knotification-k8s/knotification-service.yml
+  - knotification-k8s/knotification-mongodb.yml
+  - knotification-k8s/jwt-secret.yml
+  - knotification-k8s/knotification-destination-rule.yml
+  - knotification-k8s/knotification-virtual-service.yml
+  # service discovery eureka/consul
+  # istio
+  - istio-k8s/grafana-gateway.yml
+  - istio-k8s/zipkin-gateway.yml
+  - istio-k8s/kiali-gateway.yml
+
+patchesJson6902:
+  - target:
+      version: v1
+      kind: Namespace
+      name: khipster
+    path: patch-k8s/istio-label.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      kind: Gateway
+      name: grafana-observability-gateway
+      namespace: khipster
+    path: patch-k8s/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      name: grafana-gw-virtualservice
+      kind: VirtualService
+      namespace: khipster
+    path: patch-k8s/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      kind: Gateway
+      name: kiali-observability-gateway
+      namespace: khipster
+    path: patch-k8s/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      name: kiali-gw-virtualservice
+      kind: VirtualService
+      namespace: khipster
+    path: patch-k8s/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      kind: Gateway
+      name: zipkin-observability-gateway
+      namespace: khipster
+    path: patch-k8s/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      name: zipkin-gw-virtualservice
+      kind: VirtualService
+      namespace: khipster
+    path: patch-k8s/istio-namespace.yml

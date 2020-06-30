@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "deploymentType": "kubernetes",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "directoryPath": "../",
+    "appsFolders": ["kstore", "kinvoice", "kproduct", "knotification"],
+    "clusteredDbApps": [],
+    "consoleOptions": [],
+    "serviceDiscoveryType": false,
+    "dockerRepositoryName": "sendilkumarn",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "khipster",
+    "kubernetesServiceType": "LoadBalancer",
+    "ingressDomain": "localhost.nip.io",
+    "istio": true,
+    "jwtSecretKey": "Yjg3Zjg3YjYwNWQwMTE3YmZlNmZhYmE4YTlkYWUyMDI1MTIyODIwMTk5OGJjYjgyMzU3N2FiNDBhYWIxNWRhMWY2MTJmYzMxNDk4N2MyZWYxOGIyMjQ5ZTE1Mjc3ZGIwZjc5NA=="
+  }
+}

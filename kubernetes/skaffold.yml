@@ -1,0 +1,21 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: sendilkumarn/kstore
+      context: ../kstore
+      jib: {}
+    - image: sendilkumarn/kinvoice
+      context: ../kinvoice
+      jib: {}
+    - image: sendilkumarn/kproduct
+      context: ../kproduct
+      jib: {}
+    - image: sendilkumarn/knotification
+      context: ../knotification
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: '{{.IMAGE_NAME}}:latest'
+deploy:
+  kustomize: {}

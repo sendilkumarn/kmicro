@@ -1,0 +1,48 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "serverPort": "8083",
+    "serviceDiscoveryType": false,
+    "skipUserManagement": true,
+    "baseName": "knotification",
+    "buildTool": "gradle",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "microservice",
+    "packageName": "com.sendilkumarn.sample.knotification",
+    "packageFolder": "com/sendilkumarn/sample/knotification",
+    "jhipsterVersion": "6.10.0",
+    "creationTimestamp": 1593472500344,
+    "clientPackageManager": "npm",
+    "jwtSecretKey": "ZDM2Yjc2OTA3ODcxNTY4NmQ3Mzc0YmU1NGQzNGFmODVlNDY4OWYyMjA0NzI2NDQ5YzJiNGY3NTFmNTA2NTlmMzdmMmRhMTE2ZDk0YWQ5MThmNjhjNDkzMjE0MTlmZDIxNWI0MTJhNGZmNTRmZGIzY2MxYzcyZDcyNzRmZmVlYWI=",
+    "embeddableLaunchScript": false,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.1"
+      }
+    ],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.1"
+      }
+    ]
+  },
+  "entities": ["Notification"]
+}
