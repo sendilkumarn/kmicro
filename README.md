@@ -28,15 +28,16 @@ khipster import-jdl k8s.jdl
 
 For more information refer:
 
-[Easy Microservices with Kubernetes and Istio](https://dev.to/sendilkumarn/easy-microservices-with-kubernetes-and-istio-3nl3) |
-[Getting started with KHipster](https://sendilkumarn.com/blog/kotlin-hipster-spring-boot-kotlin) |
-[Kotlin - Getting Started](https://sendilkumarn.com/blog/kotlin-for-developers-an-introduction) |
-[Kubernetes Explained](https://sendilkumarn.com/blog/kubernetes-for-everyone) |
-[Istio Explained](https://sendilkumarn.com/blog/istio-for-everyone) |
+* [Easy Microservices with Kubernetes and Istio](https://dev.to/sendilkumarn/easy-microservices-with-kubernetes-and-istio-3nl3)
+* [Getting started with KHipster](https://sendilkumarn.com/blog/kotlin-hipster-spring-boot-kotlin)
+* [Kotlin - Getting Started](https://sendilkumarn.com/blog/kotlin-for-developers-an-introduction)
+* [Kubernetes Explained](https://sendilkumarn.com/blog/kubernetes-for-everyone)
+* [Istio Explained](https://sendilkumarn.com/blog/istio-for-everyone)
 
-[Video here](https://www.youtube.com/watch?v=2qVXmq0Ngrg) | [Slides here](https://speakerdeck.com/sendilkumarn/easy-microservices-with-k8s-and-istio)
+
+## Other links
+* [Video here](https://www.youtube.com/watch?v=2qVXmq0Ngrg) | [Slides here](https://speakerdeck.com/sendilkumarn/easy-microservices-with-k8s-and-istio)
 
 
 ## Have any questions, reach out here
-
 [Twitter](https://twitter.com/sendilkumarn) | [Dev.to](https://dev.to/sendilkumarn) | [GitHub](https://github.com/sendilkumarn)
